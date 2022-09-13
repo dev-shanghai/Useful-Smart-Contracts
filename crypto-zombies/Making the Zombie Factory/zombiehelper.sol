@@ -11,18 +11,18 @@ contract ZombieHelper is ZombieFeeding {
     _;
   }
 
-  function levelUp(uint _zombieId) external payable {
-    require(msg.value == levelUpFee);
-    zombies[_zombieId].level++;
-  }
-
-  function withdraw() external  onlyOwner {
-    address payable _owner = address(uint160(owner()));
+  function withdraw() external onlyOwner {
+    address _owner = owner();
     _owner.transfer(address(this).balance);
   }
 
   function setLevelUpFee(uint _fee) external onlyOwner {
     levelUpFee = _fee;
+  }
+
+  function levelUp(uint _zombieId) external payable {
+    require(msg.value == levelUpFee);
+    zombies[_zombieId].level = zombies[_zombieId].level.add(1);
   }
 
   function changeName(uint _zombieId, string calldata _newName) external aboveLevel(2, _zombieId) onlyOwnerOf(_zombieId) {
@@ -33,17 +33,16 @@ contract ZombieHelper is ZombieFeeding {
     zombies[_zombieId].dna = _newDna;
   }
 
-  function getZombiesByOwner(address _owner) external view returns (uint[] memory) {
+  function getZombiesByOwner(address _owner) external view returns(uint[] memory) {
     uint[] memory result = new uint[](ownerZombieCount[_owner]);
     uint counter = 0;
-    for(uint i = 0; i < zombies.length; i++) {
+    for (uint i = 0; i < zombies.length; i++) {
       if (zombieToOwner[i] == _owner) {
         result[counter] = i;
         counter++;
       }
     }
     return result;
-
   }
 
 }
