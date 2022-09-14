@@ -1,0 +1,39 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "SafeMath library implemented for uint16",
+			"methods": {},
+			"title": "SafeMath16"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity/ERC721 & Crypto-Collectibles/safemath.sol": "SafeMath16"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity/ERC721 & Crypto-Collectibles/safemath.sol": {
+			"keccak256": "0xc33fbfd715f7b3225c7ed2eebfd4877a9c64b58a8bcd4e576cf3c0666c5e9b8c",
+			"urls": [
+				"bzz-raw://6468676b06e605655167d56a70c0eb0f855df0564dff11accb4ece31d834beae",
+				"dweb:/ipfs/QmX7Qa9r4ogjyevLH3khuN5w81CZYvbiwyW9BKiqwvzH51"
+			]
+		}
+	},
+	"version": 1
+}

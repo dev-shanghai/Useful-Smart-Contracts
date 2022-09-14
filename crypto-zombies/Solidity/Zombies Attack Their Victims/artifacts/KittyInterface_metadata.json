@@ -1,0 +1,111 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getKitty",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isGestating",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "isReady",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cooldownIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nextActionAt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "siringWithId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "birthTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "matronId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sireId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "generation",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "genes",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity/Zombies Attack Their Victims/zombiefeeding.sol": "KittyInterface"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity/Zombies Attack Their Victims/zombiefactory.sol": {
+			"keccak256": "0x864b1c1bee2295541f8658ed10f638da791d219937b00c7db0f170d4cf87900c",
+			"urls": [
+				"bzz-raw://6cd8c22129ce24bc0c8dbfd9368d09e3d8e8df4dbd9903f2fa89125ccadfbf79",
+				"dweb:/ipfs/QmYeNSkeEN4S8pUpc3AikdaDKa6BD4xyMRoAqnS7nRGz9A"
+			]
+		},
+		"Solidity/Zombies Attack Their Victims/zombiefeeding.sol": {
+			"keccak256": "0x754b63a6db2483fefd9c8dcfde8c205199c68fe25189c228a7d5083722d74118",
+			"urls": [
+				"bzz-raw://1ac749534ce9bd61bcf30e3f3d1086327fb149e8e7aa20ea1b72608c3332b901",
+				"dweb:/ipfs/QmTLDAGboNz7u6ahyx5CE1YvgvJNyTeRnspTsT9GgR9ucS"
+			]
+		}
+	},
+	"version": 1
+}
