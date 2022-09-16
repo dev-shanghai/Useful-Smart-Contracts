@@ -1,0 +1,387 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "zombieId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "dna",
+						"type": "uint256"
+					}
+				],
+				"name": "NewZombie",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_zombieId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newDna",
+						"type": "uint256"
+					}
+				],
+				"name": "changeDna",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_zombieId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_newName",
+						"type": "string"
+					}
+				],
+				"name": "changeName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "createRandomZombie",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_zombieId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_kittyId",
+						"type": "uint256"
+					}
+				],
+				"name": "feedOnKitty",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getZombiesByOwner",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_zombieId",
+						"type": "uint256"
+					}
+				],
+				"name": "levelUp",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "setKittyContractAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_fee",
+						"type": "uint256"
+					}
+				],
+				"name": "setLevelUpFee",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "zombieToOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "zombies",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dna",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint32",
+						"name": "level",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "readyTime",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint16",
+						"name": "winCount",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "lossCount",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"isOwner()": {
+					"returns": {
+						"_0": "true if `msg.sender` is the owner of the contract."
+					}
+				},
+				"owner()": {
+					"returns": {
+						"_0": "the address of the owner."
+					}
+				},
+				"renounceOwnership()": {
+					"details": "Allows the current owner to relinquish control of the contract."
+				},
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"newOwner": "The address to transfer ownership to."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"renounceOwnership()": {
+					"notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Testing Smart Contracts with Truffle/contracts/zombiehelper.sol": "ZombieHelper"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Testing Smart Contracts with Truffle/contracts/ownable.sol": {
+			"keccak256": "0x7807d5999ed0db8a7aec27a8fd5bfa836f3790d6b1399c1baef67c0edc4884e9",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://f5ea0b7c72ea43504487b19dc226c2b58d5df15754c432431900121e5d164baf",
+				"dweb:/ipfs/QmTJ1A41yTcUgNHju8k2fdK98TwCCwq9XdcFtZUCyBJLQN"
+			]
+		},
+		"Testing Smart Contracts with Truffle/contracts/safemath.sol": {
+			"keccak256": "0x89db96927299c26801b6321dc0718c4c78b2796d6a4536d0a0de143a55d6e95a",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://7c47e585faec71a5466157fc145c771bad18b153474cb6703048ebaaa3be51a9",
+				"dweb:/ipfs/QmREewRnL7hAW3FX5qe85ySWnLnQkwuYQW1KqeVJjHyAcQ"
+			]
+		},
+		"Testing Smart Contracts with Truffle/contracts/zombiefactory.sol": {
+			"keccak256": "0xb292f93c106722a36a57ca6db763affe3e4ef235519d7cf9451df9bd69b1215e",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://b402409b1b3f7f3eb065bd7fdae5b00060bcee34ae88b38b9abd3327cc7a0cb6",
+				"dweb:/ipfs/QmQBn9vtGvMeW8M6u3RfqWq6biCCwgS9Gg7tDQbbBBvYtm"
+			]
+		},
+		"Testing Smart Contracts with Truffle/contracts/zombiefeeding.sol": {
+			"keccak256": "0x2909ef4a8f326852ef088a0e570fcf6033cbb57b91c22842ff347435319727fb",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://ada2621eef8a464706fe35191825de266187756abc77ba69d68917d31d22078f",
+				"dweb:/ipfs/QmTESSfvPtoWpQuw62K7d3he15uKBF6c1Xx2VKwYzd76Kz"
+			]
+		},
+		"Testing Smart Contracts with Truffle/contracts/zombiehelper.sol": {
+			"keccak256": "0xe8cc01b7a770cf9c58752555856ae37ae62b1adb8a6fffacc2c44d84b19396f1",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://584347b75cdc00ecb693ec3dbd4ac99dc2893047ea294a034aba11615a0b8e3e",
+				"dweb:/ipfs/QmcHxeaVkj33rNEpZAW9QmjjfBdXREkKv7j4YXqgZz7oQA"
+			]
+		}
+	},
+	"version": 1
+}
