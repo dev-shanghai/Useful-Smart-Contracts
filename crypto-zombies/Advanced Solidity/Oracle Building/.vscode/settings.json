@@ -1,0 +1,10 @@
+{
+    "solidity.packageDefaultDependenciesContractsDirectory": "",
+    "solidity.packageDefaultDependenciesDirectory": "../node_modules",
+    "solidity.enabledAsYouTypeCompilationErrorCheck": true,
+    "solidity.validationDelay": 1500,
+    "solidity.compileUsingRemoteVersion": "v0.8.0+commit.c7dfd78e",
+    "git.ignoreLimitWarning": true,
+    "solidity.defaultCompiler": "embedded",
+    "solidity.compileUsingLocalVersion": "/Users/asim.khan/Desktop/opensource/Useful-Smart-Contracts/Crypto-Zombies/Advanced Solidity/Oracle Building/soljson-v0.8.0+commit.c7dfd78e.js",
+}

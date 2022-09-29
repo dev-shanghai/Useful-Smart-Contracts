@@ -1,0 +1,147 @@
+{
+  "contractName": "EthPriceOracleInterface",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getLatestEthPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getLatestEthPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/EthPriceOracleInterface.sol\":\"EthPriceOracleInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/EthPriceOracleInterface.sol\":{\"keccak256\":\"0xe943025de33365b1f2855022a1071453caf30b04566f3d729c5160862884a08c\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://637fbbb3871600200f0ef43e9683e920b9fa6033968e932adf2414d68892f1f9\",\"dweb:/ipfs/QmUUp1zSTQE6RXMkmCRWNE8TEdFHL4WWKUXRmsPQLG4ebG\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity >=0.4.25 <0.9.0;\n\nabstract contract EthPriceOracleInterface {\n    function getLatestEthPrice() public virtual returns (uint256);\n}\n",
+  "sourcePath": "/Users/asim.khan/Desktop/opensource/Useful-Smart-Contracts/Crypto-Zombies/Advanced Solidity/Oracle Building/caller/contracts/EthPriceOracleInterface.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/EthPriceOracleInterface.sol",
+    "exportedSymbols": {
+      "EthPriceOracleInterface": [
+        385
+      ]
+    },
+    "id": 386,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 379,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".25",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:32:5"
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": false,
+        "id": 385,
+        "linearizedBaseContracts": [
+          385
+        ],
+        "name": "EthPriceOracleInterface",
+        "nameLocation": "91:23:5",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "30c0b9ec",
+            "id": 384,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLatestEthPrice",
+            "nameLocation": "130:17:5",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 380,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "147:2:5"
+            },
+            "returnParameters": {
+              "id": 383,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 382,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 384,
+                  "src": "174:7:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 381,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "174:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "173:9:5"
+            },
+            "scope": 385,
+            "src": "121:62:5",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "scope": 386,
+        "src": "73:112:5",
+        "usedErrors": []
+      }
+    ],
+    "src": "39:147:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.10",
+  "updatedAt": "2022-09-29T11:46:22.005Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
