@@ -1,0 +1,95 @@
+{
+  "contractName": "MyCollectible",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/CallerContract.sol\":\"MyCollectible\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0xa94b34880e3c1b0b931662cb1c09e5dfa6662f31cba80e07c5ee71cd135c9673\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://40fb1b5102468f783961d0af743f91b9980cf66b50d1d12009f6bb1869cea4d2\",\"dweb:/ipfs/QmYqEbJML4jB1GHbzD4cUZDtJg5wVwNm3vDJq1GbyDus8y\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"project:/contracts/CallerContract.sol\":{\"keccak256\":\"0xcead03844225c973644623a7b3ab8153aedca4b606922500e56de51851e9e50d\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://0db95e59bba3b63e772381429b3143abeb40ec2b09c76ec475b231856f3000d3\",\"dweb:/ipfs/QmQxmdeeLLk5GzFUnDEUtMnF6y87LQ84kdhMbF4KYnyumt\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212202faaec2588ee85ea3ef29dcb3417bc52eedb1168a0388f802983d5f4d7caedeb64736f6c63430008040033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212202faaec2588ee85ea3ef29dcb3417bc52eedb1168a0388f802983d5f4d7caedeb64736f6c63430008040033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "1611:81:2:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "1611:81:2:-:0;;;;;",
+  "source": "// // SPDX-License-Identifier: UNLICENSED\npragma solidity >=0.4.25 <0.9.0;\n\n// pragma solidity ^0.8.0;\n\n// import \"./EthPriceOracleInterface.sol\";\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\n\n// import \"@openzeppelin/contracts/token/ERC721/ERC721.sol\";\n\n// contract CallerContract is Ownable {\n//     uint256 private ethPrice;\n//     EthPriceOracleInterface private oracleInstance;\n//     address private oracleAddress;\n//     mapping(uint256 => bool) myRequests;\n//     event newOracleAddressEvent(address oracleAddress);\n//     event ReceivedNewRequestIdEvent(uint256 id);\n//     event PriceUpdatedEvent(uint256 ethPrice, uint256 id);\n\n//     function setOracleInstanceAddress(address _oracleInstanceAddress)\n//         public\n//         onlyOwner\n//     {\n//         oracleAddress = _oracleInstanceAddress;\n//         oracleInstance = EthPriceOracleInterface(oracleAddress);\n//         emit newOracleAddressEvent(oracleAddress);\n//     }\n\n//     function updateEthPrice() public {\n//         uint256 id = oracleInstance.getLatestEthPrice();\n//         myRequests[id] = true;\n//         emit ReceivedNewRequestIdEvent(id);\n//     }\n\n//     function callback(uint256 _ethPrice, uint256 _id) public {\n//         require(myRequests[id], \"This request is not in my pending list.\");\n//         ethPrice = _ethPrice;\n//         delete myRequests[id];\n//         emit PriceUpdatedEvent(_ethPrice, _id);\n//     }\n// }\n\n// import \"@openzeppelin/contracts/token/ERC721/ERC721.sol\";\n\n// import \"../node_modules/@openzeppelin/contracts/utils/Strings.sol\";\n// import \"@openzeppelin/contracts/utils/Strings.sol\";\n\ncontract MyCollectible {\n    // constructor() ERC721(\"MyCollectible\", \"MCO\") {}\n}\n",
+  "sourcePath": "/Users/asim.khan/Desktop/opensource/Useful-Smart-Contracts/Crypto-Zombies/Advanced Solidity/Oracle Building/caller/contracts/CallerContract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/CallerContract.sol",
+    "exportedSymbols": {
+      "Context": [
+        134
+      ],
+      "MyCollectible": [
+        138
+      ],
+      "Ownable": [
+        112
+      ]
+    },
+    "id": 139,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 136,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".25",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "42:32:2"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
+        "file": "@openzeppelin/contracts/access/Ownable.sol",
+        "id": 137,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 139,
+        "sourceUnit": 113,
+        "src": "147:52:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 138,
+        "linearizedBaseContracts": [
+          138
+        ],
+        "name": "MyCollectible",
+        "nameLocation": "1620:13:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 139,
+        "src": "1611:81:2",
+        "usedErrors": []
+      }
+    ],
+    "src": "42:1651:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.10",
+  "updatedAt": "2022-09-29T10:43:05.375Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
